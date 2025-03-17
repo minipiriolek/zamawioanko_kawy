@@ -1,19 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#F5F5DC">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Zamów kawe☕!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="33dp"
+        android:textColor="#D75738"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latte"
+            android:layout_margin="10dp"
+            android:textColor="#6B4226"
+            android:textSize="20dp">
+
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cappuccino"
+            android:layout_margin="10dp"
+            android:textColor="#6B4226"
+            android:textSize="20dp">
+
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espresso"
+            android:layout_margin="10dp"
+            android:textColor="#6B4226"
+            android:textSize="20dp">>
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#6B4226"
+        android:layout_margin="10dp"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mleko🥛"
+        android:textColor="#D2691E"
+        android:textSize="19dp"
+        android:layout_margin="10dp"
+        >
+
+    </CheckBox>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cukier🍬"
+        android:textColor="#D2691E"
+        android:textSize="19dp"
+        android:layout_margin="10dp"
+        >
+
+    </CheckBox>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#6B4226"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wybierz ilość kaw:"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#40E0D0"
+        >
+
+    </TextView>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="5"
+        android:progressBackgroundTint="#FF5722"
+        android:progressTint="#6B5A2C"
+        android:thumbTint="#2196F3" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#6B4226"
+        android:layout_margin="20dp"/>
+
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:text="Zatwierdź swój wybór"
+        android:layout_gravity="center"
+        android:backgroundTint="#E9CBA7"
+        android:textColor="@color/black"
+        >
+
+    </Button>
+
+
+</LinearLayout>
