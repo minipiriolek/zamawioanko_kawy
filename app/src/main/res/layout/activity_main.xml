@@ -8,12 +8,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
+    android:layout_margin="10dp"
     android:background="#F5F5DC">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Zamów kawe☕!"
+        android:background="#500000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,13 +26,15 @@
 
     <RadioGroup
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="Latte"
-            android:layout_margin="10dp"
+            android:id="@+id/radiolatte"
             android:textColor="#6B4226"
             android:textSize="20dp">
 
@@ -39,8 +43,9 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="Cappuccino"
-            android:layout_margin="10dp"
+            android:id="@+id/radiocappuccino"
             android:textColor="#6B4226"
             android:textSize="20dp">
 
@@ -49,14 +54,22 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Espresso"
             android:layout_margin="10dp"
+            android:text="Espresso"
+            android:id="@+id/radioespresso"
             android:textColor="#6B4226"
             android:textSize="20dp">>
 
         </RadioButton>
 
     </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        />
 
     <View
         android:layout_width="match_parent"
@@ -95,6 +108,7 @@
         android:layout_margin="10dp"/>
 
     <TextView
+        android:id="@+id/textview2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="wybierz ilość kaw:"
